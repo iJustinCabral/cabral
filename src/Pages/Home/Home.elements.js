@@ -50,29 +50,6 @@ export const Image = styled.img`
      }
 `
 
-export const GreetingsTextWrapper = styled.div`
-    font-family: 'Superior title', 'Times New Roman', sans-serif;
-    font-weight: 400;
-    font-size: 70px;
-    color: #222;
-    
-    @media screen and (max-width: 768px) {
-        font-size: 30px;
-     }
-`
-
-export const AboutMeTextWrapper = styled.div`
-    font-family: 'Pitchsans Regular', sans-serif;
-    font-weight: 400;
-    padding-left: 6px;
-    font-size: 18px;
-
-    @media screen and (max-width: 768px) {
-        padding-left: 0px;
-        font-size: 16px;
-     }
-`
-
 export const IntroWrapper = styled.div`
      padding-left: 10px;
 
@@ -81,17 +58,74 @@ export const IntroWrapper = styled.div`
      }
 `
 
-export const Divider = styled.div`
+// This is the main splits that will hold all content
+
+export const SectionWrapper = styled.div`
+     display: flex;
+     flex-direction: column;
+`
+
+export const SplitContainer = styled.div`
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+`
+
+export const LeftSection = styled.div`
+    padding: 20px;
+    flex-shrink: 0;
+    flex-basis: 60%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+`
+
+export const RightSection = styled.div`
+    flex-shrink: 0;
+    flex-basis: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fff
+
+
 `
-export const Triangle = styled.div`
-    margin-top: -1px;
-    width: 0; 
-    height: 10; 
-    border-left: 30px solid white;
-    border-right: 30px solid white;
-    z-index: 99;
+
+export const  TitleText = styled.div`
+    font-family: 'Superior title', 'Times New Roman', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    color: #222;
+
+    @media screen and (max-width: 768px) {
+        font-size: 30px;
+    }
+`
+
+export const ParagraphText = styled.div`
+    font-family: 'Pitchsans Regular', sans-serif;
+    font-weight: 400;
+    padding-left: 6px;
+    font-size: 18px;
+
+    @media screen and (max-width: 768px) {
+        padding-left: 0px;
+        font-size: 16px;
+    }
+`
+export const ContentImage = styled.img`
+    width: 260px;
+    height: 260px;
+
+    @media screen and (max-width: 1000px) {
+        width: 220px;
+        height: 220px;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 160px;
+        height: 160px;
+    }
 `
