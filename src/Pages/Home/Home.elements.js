@@ -58,6 +58,15 @@ export const IntroWrapper = styled.div`
      }
 `
 
+export const EducationSplitContainer = styled.div`
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+`
+
 // This is the main splits that will hold all content
 
 export const SectionWrapper = styled.div`
@@ -68,6 +77,8 @@ export const SectionWrapper = styled.div`
 export const SplitContainer = styled.div`
     display: flex;
     align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 
     @media only screen and (max-width: 768px) {
         flex-direction: column;
@@ -129,3 +140,32 @@ export const ContentImage = styled.img`
         height: 160px;
     }
 `
+
+export const RoundedContentImage = styled.img`
+    width: 240px;
+    height: 240px;
+    border-radius: 25%;
+
+    @media screen and (max-width: 1000px) {
+        width: 220px;
+        height: 220px;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 160px;
+        height: 160px;
+    }
+`
+
+export const LineDivider = styled.hr`
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.4em;
+    background: white;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+`
+
+// This is for the work &  projects section
