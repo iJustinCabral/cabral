@@ -13,6 +13,7 @@ import { Container, ContentWrapper, Image,
          IntroWrapper, SplitContainer,EducationSplitContainer, LeftSection, 
          RightSection, TitleText, ParagraphText, ContentImage, RoundedContentImage, SectionWrapper, LineDivider } from './Home.elements'
 import ProjectHeader from '../../Components/ProjectHeader/ProjectHeader'
+import Footer from '../../Components/Footer/Footer'
 
 const Home = () => {
   return ( 
@@ -158,7 +159,7 @@ const Home = () => {
         <ContentDivider />
 
         <ContentWrapper>
-          Social Media: LinkedIn | GitHub | Twitter
+          <Footer />
         </ContentWrapper>
 
 
