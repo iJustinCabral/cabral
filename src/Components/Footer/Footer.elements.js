@@ -50,4 +50,5 @@ export const SocialIconLink = styled.a`
   color: #000;
   font-size: 24px;
   padding-left: 20px;
+  padding-right: 20px;
 `;
