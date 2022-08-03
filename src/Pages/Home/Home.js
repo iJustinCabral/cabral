@@ -130,7 +130,7 @@ const Home = () => {
                 <ParagraphText>
                 In early 2022, a group of friends I met during my time in college and myself set out to create a company called Thinkr Labs, with the name being inspired by my previous company. The north star of the company
                 is to disrupt higher education and provide students with affordable, accessible, and quality education. Serving as the product manager and lead programmer, we created a web
-                site using ReactJS, and developed Ethereum smart contracts using the Solidity programming language. If you interested in learning more about our mission, visit the website: <a href="https://thinkr.online">www.thinkr.online</a>
+                site using ReactJS, and developed Ethereum smart contracts using the Solidity programming language. Though we came up short on our goals, the learning experience was well worth the effort. Website can be visted here: <a href="https://thinkr.online">www.thinkr.online</a>
                 </ParagraphText>
             </LeftSection>
             <RightSection>
@@ -140,12 +140,12 @@ const Home = () => {
 
           <SplitContainer>
             <LeftSection>
-              <ProjectHeader numberText={"05"} titleText={"Thinkrs NFTs"}/>
+              <ProjectHeader numberText={"05"} titleText={"Thinkr NFTs"}/>
                 <ParagraphText>
-                In order for Thinkr Labs to accomplish our goal of providing underprivileged students with a scholarship and stipend, we created a NFT collection to raise money for the cause.
+                In order for Thinkr Labs to try and accomplish our goal of providing underprivileged students with a scholarship and stipend, we created a NFT collection to raise money for the cause.
                 The artwork was done by two incredibly talented members of our team. The Thinkrs NFT collection went on sale August 1st and I couldn't be happier with all
                 the hard work everyone put in to make it happen. The entire journey to this NFT collection was rewarding and I've learned more about what it takes to run a succesful company
-                that contains different teams. I'm really proud of everyone.
+                that contains different teams. I'm really proud of everyone even though we didn't meet our sales expectations.
                 </ParagraphText>
             </LeftSection>
             <RightSection>
