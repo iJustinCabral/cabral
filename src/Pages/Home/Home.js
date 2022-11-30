@@ -130,7 +130,7 @@ const Home = () => {
                 <ParagraphText>
                 In early 2022, a group of friends I met during my time in college and myself set out to create a company called Thinkr Labs, with the name being inspired by my previous company. The north star of the company
                 is to disrupt higher education and provide students with affordable, accessible, and quality education. Serving as the product manager and lead programmer, we created a web
-                site using ReactJS, and developed Ethereum smart contracts using the Solidity programming language. Though we came up short on our goals, the learning experience was well worth the effort. Website can be visted here: <a href="https://thinkr.online">www.thinkr.online</a>
+                site using ReactJS, and developed Ethereum smart contracts using the Solidity programming language. Though we came up short on our goals, the learning experience was well worth the effort. Website repository can be visted here: <a href="https://github.com/iJustinCabral/thinkr-website">GitHub Repo</a>
                 </ParagraphText>
             </LeftSection>
             <RightSection>
