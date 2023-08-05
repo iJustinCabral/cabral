@@ -141,6 +141,7 @@ export const ContentImage = styled.img`
     }
 `
 
+
 export const RoundedContentImage = styled.img`
     width: 240px;
     height: 240px;

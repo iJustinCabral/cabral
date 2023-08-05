@@ -2,7 +2,8 @@ import React from 'react'
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { FooterContainer, FooterSubHeading, FooterSubscription, FooterSubText, 
     SocialIconLink, SocialLogo, SocialMedia, SocialMediaWrap, ThinkrIcon, 
-    WebsiteRights, SocialIcons} from './Footer.elements';
+    WebsiteRights, SocialIcons, XIconImg} from './Footer.elements';
+import XIcon from '../../Images/TwitterX.png'
 
 const Footer = () => {
   return (
@@ -18,7 +19,7 @@ const Footer = () => {
 
                 <SocialIcons>
                     <SocialIconLink href='https://twitter.com/iJustinCabral' target='_blank' aria-label='Twitter'>
-                        <FaTwitter />
+                        <XIconImg  src={XIcon}/>
                     </SocialIconLink>
 
                     <SocialIconLink href='https://github.com/iJustinCabral' target='_blank' aria-label='GitHub'>

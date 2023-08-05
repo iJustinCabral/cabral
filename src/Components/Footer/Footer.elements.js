@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FaMagento } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import XIcon from '../../Images/TwitterX.png'
 
 
 export const SocialMedia = styled.section`
@@ -52,3 +53,9 @@ export const SocialIconLink = styled.a`
   padding-left: 20px;
   padding-right: 20px;
 `;
+
+export const XIconImg = styled.img`
+  padding-top: 4px;
+  width: 26px;
+  height: 26px;
+`
