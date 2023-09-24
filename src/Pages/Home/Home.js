@@ -161,7 +161,7 @@ const Home = () => {
                 After the 6 year journey to getting my masters degree, I felt I could finally focus on what I loved doing most. Buildings things that I find useful, and hopefully others do too. Vital is an iOS 
                 app that tracks your steps, floors climbed, distance walked, and more. It's 100% free, and it became available in September 2023 for iOS 17. This app was the start of a brand new journey 
                 for me as a developer. I'm now working to release apps that focus on new areas of intrest to me, which also contritube to building up my knowledge of Apple's frameworks and improving my overall skill as a designer/programmer.
-                Vital can be downloaded from the app store here: <a href="https://justincabral.com">Vital - Step Counter</a>
+                Vital can be downloaded from the app store here: <a href="https://apps.apple.com/us/app/vital-step-counter/id6451499273">Vital - Step Counter</a>
                 </ParagraphText>
             </LeftSection>
             <RightSection>
