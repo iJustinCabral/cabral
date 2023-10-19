@@ -40,7 +40,7 @@ const Home = () => {
             <EducationSplitContainer> 
               <LeftSection> 
                 <TitleText> Graduate Degree</TitleText>
-                <ParagraphText> Graduated May 2023 : M.S. in Computer Sciencey</ParagraphText>
+                <ParagraphText> Graduated May 2023 : M.S. in Computer Science</ParagraphText>
                 <br></br>
                 <ParagraphText> I started graduate school at Worcestor Polytechnic Institute in Fall of 2021 and was selected as a CyberCorps: Scholarship 
                   For Service award winner. The SFS program is a nationally recognized award for the top students in security related fields. I was selected by a panel of 
