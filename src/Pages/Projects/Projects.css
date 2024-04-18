@@ -1,0 +1,29 @@
+.ctitle {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.project {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.pico {
+    float: left;
+    margin-right: 10px;
+}
+
+.pico img {
+    height: 80px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+.pdesc {
+}
+
+.pend {
+    clear: both;
+}
