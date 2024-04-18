@@ -1,22 +1,12 @@
-import styled, { keyframes } from 'styled-components'
-
-/* Animations */
-const shiftBackgroundColor = keyframes`
-    0% {background-position: 0 50%;}
-    50% { background-position: 100%, 50%;}
-    100% {background-position: 0 50%;}
-`
+import styled from 'styled-components'
 
 /* Styled Components */
 export const Container = styled.section`
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: linear-gradient(-45deg, #965BA0, #2581BB, #5CE88B);
     background-size: 400% 400%;
-    position: relative;
-    animation: 10s ${shiftBackgroundColor} ease-in-out infinite;
-`
+    position: relative;`
 
 export const ContentWrapper = styled.div`
     padding: 20px;

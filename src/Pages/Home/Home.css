@@ -1,0 +1,144 @@
+/* Root */
+:root {
+	--white: #efefef;
+	--transwhite: rgba(239, 239, 239, 0.7);
+	--moretranswhite: rgba(239, 239, 239, 0.1);
+	--black: #252525;
+	--transblack: rgba(37, 37, 37, 0.7);
+	--moretransblack: rgba(37, 37, 37, 0.1);
+	--gray: #a4a4a4;
+	--highlight: #e5ffc3;
+	--red: #e4002b;
+	--green: #24d05a;
+	--pink: #eb4888;
+	--blue: #10a2f5;
+	--yellow: #e9bc3f;
+}
+
+/* Defaults */
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: var(--white);
+    color: var(--black);
+}
+
+body {
+    font-family: "iA Writer Mono", monospace;
+}
+
+h1 {
+    font-weight: 400;
+    margin: 0;
+
+}
+
+h2 {
+    color: var(--gray);
+    font-weight: 300;
+    margin: 0 0 0.5em 0;
+}
+
+a {
+	color: var(--black);
+	text-decoration-thickness: 0.2ex;
+	text-underline-offset: 0.6ex;
+}
+a:hover {
+	font-weight: bold;
+}
+
+/* Custom Divs */
+.container {
+    margin: 50px auto;
+    padding: 5px;
+    max-width: 650px;
+}
+
+@media (max-width: 600px) {
+	.container {
+		padding: 20px;
+	}
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header-frame {
+    max-width: 350px;
+}
+
+.img-frame {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 0 10px 0;
+    border-radius:  50%;
+    border: 8px solid #BDC2C8;
+    overflow: hidden;
+}
+
+.img-frame img {
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	height: 100%;
+}
+
+.links {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.links a:not(:last-child) {
+	padding: 0 20px 0 0;
+}
+
+@media (max-width: 600px) {
+	.links {
+		text-align: center;
+	}
+
+    .links a {
+        margin-top: 40px;
+    }
+}
+
+.bio {
+    margin-top: 40px;
+    display: block;
+    line-height: 1.6;
+    font-size:  clamp(1rem, 0.96rem + 0.22vw, 1.125rem);
+}
+
+/* Font Faces */
+/* ia-writer-mono-latin-400-normal */
+@font-face {
+	font-family: "iA Writer Mono";
+	font-style: normal;
+	font-display: swap;
+	font-weight: 400;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-normal.woff2)
+			format("woff2"),
+		url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-normal.woff)
+			format("woff");
+}
+
+/* ia-writer-mono-latin-700-normal */
+@font-face {
+	font-family: "iA Writer Mono";
+	font-style: normal;
+	font-display: swap;
+	font-weight: 700;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-normal.woff2)
+			format("woff2"),
+		url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-normal.woff)
+			format("woff");
+}
