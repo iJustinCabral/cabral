@@ -30,12 +30,13 @@ const Timeline = () => {
 
                 <div class="links">
                     <Link to="/">Home</Link>
-                    <a href="https://x.com/iJustinCabral/articles">Articles</a>
+                    <Link to="/timeline">Timeline</Link>
                     <Link to="/projects">Projects</Link>
-                    <a href="https://x.com/iJustinCabral">X</a>
-                    <a href="https://github.com/iJustinCabral">GitHub</a>
-                    <a href="https://huggingface.co/ijustincabral">Hugging Face</a>
-                    <a href="https://www.linkedin.com/in/justin-cabral-2272a623/">LinkedIn</a>
+                    <a href="https://x.com/iJustinCabral/articles" target=' _blank'>Articles</a>
+                    <a href="https://x.com/iJustinCabral" target=' _blank'>X</a>
+                    <a href="https://github.com/iJustinCabral" target=' _blank'>GitHub</a>
+                    <a href="https://huggingface.co/ijustincabral" target=' _blank'>Hugging Face</a>
+                    <a href="https://www.linkedin.com/in/justin-cabral-2272a623/" target=' _blank'>LinkedIn</a>
                 </div>
 
                 <hr></hr>
