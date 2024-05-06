@@ -26,7 +26,7 @@ const Home = () => {
           <Link to="/timeline">Timeline</Link>
           <Link to="/projects">Projects</Link>
           <a href="https://thinkrlabs.org" target=' _blank'>Thinkr Labs</a>
-          <a href="https://x.com/iJustinCabral/articles" target=' _blank'>Articles</a>
+          <a href="https://justincabral.substack.com/" target=' _blank'>Blog</a>
           <a href="https://x.com/iJustinCabral" target=' _blank'>X</a>
           <a href="https://github.com/iJustinCabral" target=' _blank'>GitHub</a>
           <a href="https://www.linkedin.com/in/justin-cabral-2272a623/" target=' _blank'>LinkedIn</a>
