@@ -32,7 +32,6 @@ const Timeline = () => {
                     <Link to="/">Home</Link>
                     <Link to="/timeline">Timeline</Link>
                     <Link to="/projects">Projects</Link>
-                    <a href="https://thinkrlabs.org" target=' _blank'>Thinkr Labs</a>
                     <a href="https://justincabral.substack.com/" target=' _blank'>Blog</a>
                     <a href="https://x.com/iJustinCabral" target=' _blank'>X</a>
                     <a href="https://github.com/iJustinCabral" target=' _blank'>GitHub</a>
