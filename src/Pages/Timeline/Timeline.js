@@ -78,7 +78,7 @@ const Timeline = () => {
                         </div>
 
                         <div class="desc">
-                            In May of 2023 I graduated with a MS degree in Computer Science from Worcestor Polytechnic Institute. I also had
+                            In May of 2023 I graduated with a Masters of Science in Computer Science from Worcestor Polytechnic Institute. I also had
                             the distint honor of being part of the national CyberCorps: Scholarship for Service program.
                             <p></p>
                         </div>
@@ -92,7 +92,7 @@ const Timeline = () => {
                         </div>
 
                         <div class="desc">
-                            In May 2021 I gradudated from Rhode Island College with a BS degree in Computer Science. I look back foundly at my time here because
+                            In May 2021 I gradudated from Rhode Island College with a Bachelors of Science in Computer Science. I look back foundly at my time here because
                             I met some great friends and worked in the I.T. department helping students.
                             <p></p>
                         </div>
