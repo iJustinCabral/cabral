@@ -12,7 +12,7 @@ const Home = () => {
 
           <div class="header-frame">
             <h1>Justin Cabral</h1>
-            <h2>Software Engineer living in Rhode Island</h2>
+            <h2>Software Engineer<br></br>living in Rhode Island</h2>
           </div>
 
           <div class="img-frame">
