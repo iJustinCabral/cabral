@@ -41,17 +41,31 @@ const Timeline = () => {
                 <hr></hr>
 
                 <div class="history">
+
                     <div class="entry row">
-                        <div class="timespan"> 2023-Now</div>
+                        <div class="timespan"> 2025-Now</div>
+                        <div class="ico">
+                            <div class="entry-dot"></div>
+                            <img src={RIC} alt=""></img>
+                        </div>
+
+                        <div class="desc">
+                            In May of 2025 I started a new job as a Senior Programmer at Rhode Island College. I currently work on the PeopleSoft backend which is the vital records and finanical system of the college. I had an awesome time here as a student, and couldn't be happier to help the next generation of students by improving their customer experience at the college.
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="entry row">
+                        <div class="timespan"> 2023-2025</div>
                         <div class="ico">
                             <div class="entry-dot"></div>
                             <img src={Volpe} alt=""></img>
                         </div>
 
                         <div class="desc">
-                            In June of 2023 after graduating from WPI, I joined Volpe National Transporation Systems. I'm a Computer Scientist
-                            in the Advanced Vehicle Technology division known internally as V-337. I'm currently working on tasks that cover software engineering, data science
-                            and cybersecurity.
+                            In June of 2023 after graduating from WPI, I joined Volpe National Transporation Systems. I was a Computer Scientist
+                            in the Advanced Vehicle Technology division known internally as V-337. I worked on tasks that cover software engineering, data science
+                            and cybersecurity. My favorite project while here was helping to stage a traffic singal control server which let clients use an API to receive status updates intersection light patterns.
                             <p></p>
                         </div>
                     </div>
