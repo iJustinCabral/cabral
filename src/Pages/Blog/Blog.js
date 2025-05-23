@@ -20,7 +20,25 @@ const Blog = () => {
         throw new Error('Failed to fetch posts')
       }
       const data = await response.json()
-      setPosts(data.filter(post => post.published))
+      const publishedPosts = data.filter(post => post.published)
+      
+      // Fetch full content for each post
+      const fullPosts = await Promise.all(
+        publishedPosts.map(async (post) => {
+          try {
+            const postResponse = await fetch(`${API_URL}/api/posts/${post.slug}`)
+            if (postResponse.ok) {
+              const fullPost = await postResponse.json()
+              return fullPost
+            }
+            return post // fallback to preview if full post fails
+          } catch (error) {
+            return post // fallback to preview if full post fails
+          }
+        })
+      )
+      
+      setPosts(fullPosts)
       setLoading(false)
     } catch (err) {
       setError(err.message)
@@ -43,7 +61,15 @@ const Blog = () => {
         <div className="container">
           <NavBar />
           <hr />
-          <div className="ctitle">Latest Posts</div>
+          <div className="sponsor-banner">
+          <div className="sponsor-content">
+            <h3>📢 Sponsor this blog</h3>
+            <p>Reach developers and tech enthusiasts</p>
+            <a href="mailto:hello@justincabral.com?subject=Blog Sponsorship Inquiry" className="sponsor-button">
+              Get in touch
+            </a>
+          </div>
+        </div>
           <div className="loading">Loading posts...</div>
         </div>
       </body>
@@ -56,7 +82,15 @@ const Blog = () => {
         <div className="container">
           <NavBar />
           <hr />
-          <div className="ctitle">Latest Posts</div>
+          <div className="sponsor-banner">
+          <div className="sponsor-content">
+            <h3>📢 Sponsor this blog</h3>
+            <p>Reach developers and tech enthusiasts</p>
+            <a href="mailto:hello@justincabral.com?subject=Blog Sponsorship Inquiry" className="sponsor-button">
+              Get in touch
+            </a>
+          </div>
+        </div>
           <div className="error">Error loading posts: {error}</div>
         </div>
       </body>
@@ -68,28 +102,37 @@ const Blog = () => {
       <div className="container">
         <NavBar />
         <hr />
-        <div className="ctitle">Latest Posts</div>
+        <div className="sponsor-banner">
+          <div className="sponsor-content">
+            <h3>📢 Sponsor this blog</h3>
+            <p>Reach developers and tech enthusiasts</p>
+            <a href="mailto:hello@justincabral.com?subject=Blog Sponsorship Inquiry" className="sponsor-button">
+              Get in touch
+            </a>
+          </div>
+        </div>
         
         {posts.length === 0 ? (
           <div className="no-posts">No blog posts yet. Check back soon!</div>
         ) : (
           <div className="posts">
             {posts.map((post) => (
-              <div key={post.slug} className="post-preview">
-                <div className="post-meta">
-                  <span className="post-date">{formatDate(post.date)}</span>
-                </div>
-                <h3 className="post-title">
-                  <Link to={`/${post.slug}`}>{post.title}</Link>
-                </h3>
-                {post.excerpt && (
-                  <p className="post-excerpt">{post.excerpt}</p>
-                )}
-                <div className="post-read-more">
-                  <Link to={`/${post.slug}`}>Read more →</Link>
-                </div>
-                <hr />
-              </div>
+              <article key={post.slug} className="full-post">
+                <header className="post-header">
+                  <h2 className="post-title">
+                    <Link to={`/${post.slug}`}>{post.title}</Link>
+                  </h2>
+                  <div className="post-meta">
+                    <span className="post-date">{formatDate(post.date)}</span>
+                    {post.author && <span className="post-author"> • by {post.author}</span>}
+                  </div>
+                </header>
+                
+                <div 
+                  className="post-content"
+                  dangerouslySetInnerHTML={{ __html: post.content }}
+                />
+              </article>
             ))}
           </div>
         )}
