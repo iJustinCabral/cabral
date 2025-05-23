@@ -1,0 +1,276 @@
+/* Admin Panel Styles */
+
+/* Login Form */
+.login-form {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--gray);
+  border-radius: 3px;
+  font-family: "iA Writer Mono", monospace;
+  font-size: 1rem;
+  background: var(--white);
+  color: var(--black);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--black);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 200px;
+}
+
+.form-help {
+  font-size: 0.85em;
+  color: var(--gray);
+  margin-top: 5px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-right: 10px;
+  border: 1px solid var(--gray);
+  border-radius: 3px;
+  text-decoration: none;
+  color: var(--black);
+  background: var(--white);
+  font-family: "iA Writer Mono", monospace;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  font-weight: bold;
+  background: var(--moretransblack);
+}
+
+.btn-primary {
+  background: var(--black);
+  color: var(--white);
+  border-color: var(--black);
+}
+
+.btn-primary:hover {
+  background: var(--gray);
+  color: var(--white);
+}
+
+.btn-secondary {
+  background: var(--gray);
+  color: var(--white);
+  border-color: var(--gray);
+}
+
+.btn-secondary:hover {
+  background: var(--black);
+}
+
+.btn-danger {
+  background: var(--red);
+  color: var(--white);
+  border-color: var(--red);
+}
+
+.btn-danger:hover {
+  background: #c0001f;
+}
+
+.btn-small {
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  margin-right: 5px;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Admin Header */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Posts Table */
+.posts-table {
+  margin-top: 30px;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 2fr 100px 150px 120px;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 2px solid var(--black);
+  font-weight: 700;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 2fr 100px 150px 120px;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--gray);
+  align-items: center;
+}
+
+.table-row:hover {
+  background: var(--moretransblack);
+}
+
+.post-title a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.post-title a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.status {
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.status.published {
+  background: var(--green);
+  color: white;
+}
+
+.status.draft {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.post-date {
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+.post-actions {
+  display: flex;
+  gap: 5px;
+}
+
+/* Post Form */
+.post-form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+
+.form-actions {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid var(--gray);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  
+  .table-header {
+    display: none;
+  }
+  
+  .table-row {
+    padding: 15px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .post-title::before {
+    content: "Title: ";
+    font-weight: bold;
+  }
+  
+  .post-date::before {
+    content: "Date: ";
+    font-weight: bold;
+  }
+  
+  .post-actions {
+    margin-top: 10px;
+  }
+  
+  .admin-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .btn {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .login-form,
+  .post-form {
+    margin: 20px 0;
+    padding: 20px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}

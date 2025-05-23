@@ -1,0 +1,211 @@
+/* Blog specific styles - inherits base styles from Home.css */
+
+.ctitle {
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.loading, .error, .no-posts {
+    text-align: center;
+    margin: 40px 0;
+    color: var(--gray);
+}
+
+.error {
+    color: var(--red);
+}
+
+.posts {
+    margin-top: 40px;
+}
+
+.post-preview {
+    margin-bottom: 40px;
+}
+
+.post-meta {
+    margin-bottom: 10px;
+}
+
+.post-date {
+    color: var(--gray);
+    font-size: 0.9em;
+}
+
+.post-author {
+    color: var(--gray);
+    font-size: 0.9em;
+}
+
+.post-title {
+    margin: 10px 0;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.post-title a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.post-title a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.post-excerpt {
+    margin: 15px 0;
+    line-height: 1.6;
+    color: var(--black);
+}
+
+.post-read-more {
+    margin: 15px 0 20px 0;
+}
+
+.post-read-more a {
+    color: var(--gray);
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.post-read-more a:hover {
+    color: var(--black);
+    font-weight: bold;
+}
+
+/* Individual blog post styles */
+.back-link {
+    margin: 20px 0;
+}
+
+.back-link a {
+    color: var(--gray);
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.back-link a:hover {
+    color: var(--black);
+    font-weight: bold;
+}
+
+.blog-post {
+    margin-top: 30px;
+}
+
+.post-header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.post-header .post-title {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.post-header .post-meta {
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: 20px;
+}
+
+.post-content {
+    line-height: 1.6;
+    font-size: clamp(1rem, 0.96rem + 0.22vw, 1.125rem);
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    margin: 30px 0 15px 0;
+    font-weight: 400;
+}
+
+.post-content h1 {
+    font-size: 1.8em;
+}
+
+.post-content h2 {
+    font-size: 1.5em;
+    color: var(--black);
+}
+
+.post-content h3 {
+    font-size: 1.3em;
+}
+
+.post-content p {
+    margin: 20px 0;
+}
+
+.post-content a {
+    color: var(--black);
+    text-decoration-thickness: 0.2ex;
+    text-underline-offset: 0.6ex;
+}
+
+.post-content a:hover {
+    font-weight: bold;
+}
+
+.post-content ul,
+.post-content ol {
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+.post-content li {
+    margin: 8px 0;
+}
+
+.post-content blockquote {
+    margin: 30px 0;
+    padding: 20px;
+    border-left: 4px solid var(--gray);
+    background: var(--moretransblack);
+    font-style: italic;
+}
+
+.post-content code {
+    background: var(--moretransblack);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: "iA Writer Mono", monospace;
+    font-size: 0.9em;
+}
+
+.post-content pre {
+    background: var(--moretransblack);
+    padding: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+.post-content pre code {
+    background: none;
+    padding: 0;
+}
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 600px) {
+    .post-header .post-title {
+        font-size: 1.5em;
+    }
+    
+    .post-content {
+        font-size: 1rem;
+    }
+}
