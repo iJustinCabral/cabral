@@ -1,7 +1,6 @@
 import React from 'react'
 import './Projects.css'
-import { Link } from 'react-router-dom'
-import ProfilePic from '../../Images/me.jpg'
+import NavBar from '../../components/NavBar'
 import Vital from '../../Images/Vital.png'
 import NFT from '../../Images/nft.gif'
 import Present from '../../Images/present.png'
@@ -11,35 +10,14 @@ import Hat from '../../Images/hat.png'
 const Projects = () => {
   return (
     <>
-    <body class="">
-      <div class="container">
-          <div class="header-section">
-
-            <div class="header-frame">
-              <h1>Justin Cabral</h1>
-              <h2>Software Engineer<br></br>living in Rhode Island</h2>
-            </div>
-
-            <div class="img-frame">
-              <img id="profile-pic" src={ProfilePic} alt=""></img>
-            </div>
-
-          </div>
-
-          <div class="links">
-            <Link to="/">Home</Link>
-            <Link to="/timeline">Timeline</Link>
-            <Link to="/projects">Projects</Link>
-            <a href="https://justincabral.substack.com/" target=' _blank'>Blog</a>
-            <a href="https://x.com/iJustinCabral" target=' _blank'>X</a>
-            <a href="https://github.com/iJustinCabral" target=' _blank'>GitHub</a>
-            <a href="https://www.linkedin.com/in/justin-cabral-2272a623/" target=' _blank'>LinkedIn</a>
-           </div>
+    <body className="">
+      <div className="container">
+          <NavBar />
           
           <hr></hr>
 
          
-          <div class="ctitle"> My Projects</div>
+          <div className="ctitle"> My Projects</div>
 
           <div class="project">
             <div class="pico">

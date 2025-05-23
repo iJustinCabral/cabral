@@ -1,42 +1,20 @@
 import React from 'react'
 import './Timeline.css'
-import ProfilePic from '../../Images/me.jpg'
+import NavBar from '../../components/NavBar'
 import Volpe from '../../Images/volpe.png'
 import WPI from '../../Images/wpi.png'
 import NavSea from '../../Images/navsea.png'
 import RIC from '../../Images/ric.png'
 import Thinkr from '../../Images/thinkr.png'
 import BigNerd from '../../Images/big-nerd.png'
-import { Link } from 'react-router-dom'
 
 
 const Timeline = () => {
   return (
     <>
-        <body class="">
-            <div class="container">
-                <div class="header-section">
-
-                    <div class="header-frame">
-                        <h1>Justin Cabral</h1>
-                        <h2>Software Engineer<br></br>living in Rhode Island</h2>
-                    </div>
-
-                    <div class="img-frame">
-                        <img id="profile-pic" src={ProfilePic} alt=""></img>
-                    </div>
-
-                </div>
-
-                <div class="links">
-                    <Link to="/">Home</Link>
-                    <Link to="/timeline">Timeline</Link>
-                    <Link to="/projects">Projects</Link>
-                    <a href="https://justincabral.substack.com/" target=' _blank'>Blog</a>
-                    <a href="https://x.com/iJustinCabral" target=' _blank'>X</a>
-                    <a href="https://github.com/iJustinCabral" target=' _blank'>GitHub</a>
-                    <a href="https://www.linkedin.com/in/justin-cabral-2272a623/" target=' _blank'>LinkedIn</a>
-                </div>
+        <body className="">
+            <div className="container">
+                <NavBar />
 
                 <hr></hr>
 
