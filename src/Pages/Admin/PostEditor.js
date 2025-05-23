@@ -12,7 +12,6 @@ const PostEditor = () => {
   const [formData, setFormData] = useState({
     title: '',
     content: '',
-    excerpt: '',
     published: true
   })
   const [loading, setLoading] = useState(false)
@@ -43,7 +42,6 @@ const PostEditor = () => {
       setFormData({
         title: post.title,
         content: post.rawContent,
-        excerpt: post.excerpt || '',
         published: post.published
       })
       setLoading(false)
@@ -143,17 +141,6 @@ const PostEditor = () => {
             />
           </div>
 
-          <div className="form-group">
-            <label htmlFor="excerpt">Excerpt</label>
-            <input
-              type="text"
-              id="excerpt"
-              name="excerpt"
-              value={formData.excerpt}
-              onChange={handleInputChange}
-              placeholder="Brief description of the post..."
-            />
-          </div>
 
           <div className="form-group">
             <label htmlFor="content">Content *</label>

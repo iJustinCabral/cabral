@@ -238,12 +238,12 @@
     margin-bottom: 10px;
   }
   
-  .post-title::before {
+  .table-row .post-title::before {
     content: "Title: ";
     font-weight: bold;
   }
   
-  .post-date::before {
+  .table-row .post-date::before {
     content: "Date: ";
     font-weight: bold;
   }

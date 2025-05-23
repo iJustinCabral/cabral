@@ -1,10 +1,47 @@
 /* Blog specific styles - inherits base styles from Home.css */
 
-.ctitle {
-    font-size: 1.5em;
-    font-weight: 400;
-    text-align: center;
+.sponsor-banner {
+    background: var(--moretransblack);
+    border: 1px solid var(--gray);
+    border-radius: 8px;
     margin: 40px 0;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.sponsor-banner:hover {
+    background: var(--transblack);
+}
+
+.sponsor-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.sponsor-content p {
+    margin: 0 0 20px 0;
+    color: var(--gray);
+    font-size: 0.95em;
+}
+
+.sponsor-button {
+    display: inline-block;
+    background: var(--black);
+    color: var(--white);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: 400;
+    transition: all 0.2s ease;
+}
+
+.sponsor-button:hover {
+    background: var(--gray);
+    font-weight: bold;
 }
 
 .loading, .error, .no-posts {
@@ -18,16 +55,47 @@
 }
 
 .posts {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
-.post-preview {
-    margin-bottom: 40px;
+/* Full post styles */
+.full-post {
+    margin-bottom: 80px;
 }
 
-.post-meta {
-    margin-bottom: 10px;
+.full-post .post-header {
+    margin-bottom: 30px;
+    text-align: left;
 }
+
+.full-post .post-title {
+    font-size: 1.8em;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.full-post .post-title a {
+    color: var(--black);
+    text-decoration: underline;
+    text-decoration-thickness: 0.2ex;
+    text-underline-offset: 0.6ex;
+}
+
+.full-post .post-title a:hover {
+    font-weight: bold;
+}
+
+.full-post .post-meta {
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--gray);
+}
+
+.full-post .post-content {
+    margin: 30px 0;
+}
+
 
 .post-date {
     color: var(--gray);
@@ -37,43 +105,6 @@
 .post-author {
     color: var(--gray);
     font-size: 0.9em;
-}
-
-.post-title {
-    margin: 10px 0;
-    font-size: 1.3em;
-    font-weight: 400;
-}
-
-.post-title a {
-    text-decoration: none;
-    color: var(--black);
-}
-
-.post-title a:hover {
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.post-excerpt {
-    margin: 15px 0;
-    line-height: 1.6;
-    color: var(--black);
-}
-
-.post-read-more {
-    margin: 15px 0 20px 0;
-}
-
-.post-read-more a {
-    color: var(--gray);
-    text-decoration: none;
-    font-size: 0.9em;
-}
-
-.post-read-more a:hover {
-    color: var(--black);
-    font-weight: bold;
 }
 
 /* Individual blog post styles */
@@ -200,12 +231,106 @@
 }
 
 /* Mobile responsive adjustments */
-@media (max-width: 600px) {
-    .post-header .post-title {
+@media (max-width: 768px) {
+    .sponsor-banner {
+        margin: 30px 0;
+        padding: 25px 20px;
+    }
+    
+    .sponsor-content h3 {
+        font-size: 1.1em;
+    }
+    
+    .sponsor-content p {
+        font-size: 0.9em;
+    }
+    
+    .sponsor-button {
+        padding: 12px 24px;
+        font-size: 0.95em;
+    }
+    
+    .full-post {
+        margin-bottom: 60px;
+    }
+    
+    .full-post .post-title {
+        font-size: 1.5em;
+        line-height: 1.3;
+    }
+    
+    .full-post .post-header {
+        margin-bottom: 25px;
+    }
+    
+    .full-post .post-content {
+        margin: 25px 0;
+    }
+    
+    .post-content h1 {
         font-size: 1.5em;
     }
     
+    .post-content h2 {
+        font-size: 1.3em;
+    }
+    
+    .post-content h3 {
+        font-size: 1.2em;
+    }
+    
+    .post-content ul,
+    .post-content ol {
+        padding-left: 20px;
+    }
+    
+    .post-content pre {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .sponsor-banner {
+        margin: 20px 0;
+        padding: 20px 15px;
+    }
+    
+    .full-post {
+        margin-bottom: 50px;
+        padding: 0 10px;
+    }
+    
+    .full-post .post-title {
+        font-size: 1.3em;
+        padding: 0 5px;
+    }
+    
+    .full-post .post-header {
+        padding: 0 5px;
+    }
+    
+    .full-post .post-content {
+        padding: 0 5px;
+    }
+    
     .post-content {
-        font-size: 1rem;
+        font-size: 0.95rem;
+    }
+    
+    .post-content blockquote {
+        padding: 15px;
+        margin: 20px 0;
+    }
+    
+    .post-content pre {
+        padding: 12px;
+        font-size: 0.85em;
+    }
+    
+    .post-content ul,
+    .post-content ol {
+        padding-left: 15px;
     }
 }

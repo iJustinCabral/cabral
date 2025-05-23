@@ -8,6 +8,8 @@ published: true
 ---
 
 
+
+
 # Welcome to My Personal Blog
 
 After years of procrastination, I decided to build my own blog system. This gives me complete control over my content and the ability to customize the experience exactly how I want it.
@@ -26,5 +28,8 @@ This blog is powered by:
 - Markdown support for rich content
 
 Let's have some fun? More posts coming soon!
-
+\
+\
+\
+\
 *-justin*
